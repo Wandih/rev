@@ -13,7 +13,7 @@ describe("Testando função Somar", () => {
 
     it("somando 1 número e uma letra", () => {
 
-        const result = ServiceApi.Somar(1, "a")
+        const result = () => ServiceApi.Somar(1, "a")
 
         expect(result).toThrow('informe somente números')
 
@@ -33,7 +33,7 @@ describe("Testando função Subtrair", () => {
 
     it("subtraindo 1 número e uma letra", () => {
 
-        const result = ServiceApi.Subtrair(1, "a")
+        const result = () => ServiceApi.Subtrair(1, "a")
 
         expect(result).toThrow('informe somente números')
 
